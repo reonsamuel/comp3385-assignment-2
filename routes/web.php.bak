@@ -22,9 +22,3 @@ Route::get('/about', function () {
 });
 
 // Create additional Routes below
-
-use App\Http\Controllers\FeedbackController;
-
-Route::view('/feedback', 'feedback-form');
-Route::post('/feedback/send', [FeedbackController::class, 'send'])->name('feedback.send');
-Route::view('/feedback/success', 'feedback-success');
